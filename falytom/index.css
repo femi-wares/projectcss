@@ -171,6 +171,7 @@ main > .form {
   position: relative;
   margin: 0rem 1rem;
   color: var(--main-color);
+  perspective: 700px;
 }
 main > .form > form {
   display: flex;
@@ -184,8 +185,10 @@ main > .form > form {
   padding: 0.5rem;
   gap: 2rem;
   flex-direction: column;
+  transform-style: preserve-3d;
+  /* transition: all 0.6s ease; */
 }
-.form_intersect{
+.form_intersect {
   display: flex;
   transition: 0.6s all ease;
 }
@@ -253,7 +256,7 @@ main > .form > form > .sect-2 > h4 {
     box-shadow: var(--box-shadow);
     position: fixed;
     z-index: 1;
-    background-color:rgb(11, 22, 25);
+    background-color: rgb(11, 22, 25);
   }
   body > header > .responsive_nav_container .nav_show {
     display: flex;
